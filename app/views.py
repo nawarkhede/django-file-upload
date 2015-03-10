@@ -1,9 +1,8 @@
 # Create your views here.
 from django.views.generic.edit import FormView
-from django.http.response import HttpResponseRedirect, HttpResponse
+from django.http.response import HttpResponse
 from app.forms import ProfileImageForm
 from app.models import ProfileImage
-from django.core.urlresolvers import reverse
 class ProfileImageView(FormView):
     template_name = 'profile_image_form.html'
     form_class = ProfileImageForm
